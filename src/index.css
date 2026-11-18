@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+
+  --color-crema: #FFF5E3;
+  --color-blanco: #FFFFFF;
+  --color-nude: #E9C5B3;
+  --color-rosa-palo: #C29288;
+  --color-marron-rosado: #AE7D6B;
+  --color-cacao: #5B3F35;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FFF5E3;
+    color: #5B3F35;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Ocultar barra de scroll en carruseles horizontales manteniendo accesibilidad */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Karisma Face & Body",
+  "description": "Tienda online de maquillaje y belleza en Medellín. Productos originales de Montoc, Atenea, Prosa y Girl Y con envíos en el área metropolitana y toda Colombia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
